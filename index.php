@@ -17,7 +17,7 @@ $res = mysqli_query($conn, 'SELECT * FROM ITFTEST');
   <tr class="bg-info">
     <th width="100"> <div align="center">Product</div></th>
     <th width="350"> <div align="center">Price </div></th>
-    <th width="150"> <div align="center">Price</div></th>
+    <th width="150"> <div align="center">Amount</div></th>
     <th width="150"> <div align="center">Total</div></th>
   </tr>
 <?php
