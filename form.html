@@ -36,12 +36,14 @@ div {
 <body>
 	<div>
   <form action = "insert.php" method = "post" id="CommentForm" class="form-group">
-    <label for="idName" style="margin: auto 120px">Name</label>
-    <input type="text" name = "name" id="idName" placeholder="Enter Name"> <br>
-    <label for="idComment" style="margin: auto 120px">Comment</label>
-    <input type="text" name = "comment" id="idComment" placeholder="Enter Comment"></input><br>
-    <label for="idLink" style="margin: auto 120px">Link</label>
-    <input type="text" name = "link" id="idLink" placeholder="Enter Link"> <br><br>
+    <label for="idProduct" style="margin: auto 120px">Product</label>
+    <input type="text" name = "Product" id="idProduct" value="<?php echo "$row[Product]"; ?>" <br>
+    <label for="idPrice" style="margin: auto 120px">Price</label>
+    <input type="text" name = "Price" id="idPrice" value="<?php echo "$row[Price]"; ?>" <br>
+		<label for="idAmount" style="margin: auto 120px">Amount</label>
+    <input type="text" name = "Amount" id="idAmount" value="<?php echo "$row[Amount]"; ?>"> <br><br>
+		<label for="idTotal" style="margin: auto 120px">Total</label>
+    <input type="text" name = "Total" id="idTotal" value="<?php echo "$row[Total]"; ?>"> <br><br>
     <input type="submit" id="commentBtn"class="btn btn-outline-warning">
   </form> 
   </form>
