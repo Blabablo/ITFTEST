@@ -1,7 +1,7 @@
 <?php
 $id=$_GET['ID'];
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'labitftest.mysql.database.azure.com', 'Jirayu020@labitftest', 'Jirayutest101', 'itflab', 3306);
+mysqli_real_connect($conn, 'labitftest.mysql.database.azure.com', 'Jirayu020@labitftest', 'Jirayutest101', 'ITFtest', 3306);
 $res = mysqli_query($conn, "SELECT * FROM ITFTEST WHERE ID='$id'");
 $row = mysqli_fetch_array($res)
 ?>
@@ -39,12 +39,14 @@ div {
 </style>
 <div>
 <form action = "update.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm">
-    <label for="idName" style="margin: auto 120px">Name</label>
-    <input type="text" name = "Name" id="idName" value="<?php echo "$row[Name]"; ?>" <br>
-    <label for="idComment" style="margin: auto 120px">Comment</label>
-    <input type="text" name = "Comment" id="idComment" value="<?php echo "$row[Comment]"; ?>" <br>
-		<label for="idLink" style="margin: auto 120px">Link</label>
-    <input type="text" name = "Link" id="idLink" value="<?php echo "$row[Link]"; ?>"> <br><br>
+    <label for="idProduct" style="margin: auto 120px">Product</label>
+    <input type="text" name = "Product" id="idProduct" value="<?php echo "$row[Product]"; ?>" <br>
+    <label for="idPrice" style="margin: auto 120px">Price</label>
+    <input type="text" name = "Price" id="idPrice" value="<?php echo "$row[Price]"; ?>" <br>
+		<label for="idAmount" style="margin: auto 120px">Amount</label>
+    <input type="text" name = "Amount" id="idAmount" value="<?php echo "$row[Amount]"; ?>"> <br><br>
+		<label for="idTotal" style="margin: auto 120px">Total</label>
+    <input type="text" name = "Total" id="idTotal" value="<?php echo "$row[Total]"; ?>"> <br><br>
     <input type="submit" id="commentBtn"class="btn btn-outline-warning">
 </div>
   </form>
