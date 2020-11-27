@@ -25,10 +25,10 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['ชื่อสินค้า'];?></div></td>
-    <td><?php echo $Result['ราคาต่อหน่วย'];?></td>
-    <td><?php echo $Result['จำนวน'];?></td>
-    <td><?php echo $Result['ราคาทั้งหมด'];?></td>
+    <td><?php echo $Result['Product'];?></div></td>
+    <td><?php echo $Result['Price'];?></td>
+    <td><?php echo $Result['Amount'];?></td>
+    <td><?php echo $Result['Price']*$Result['Amount'];?></td>
     <td>
       <a href="edit.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-success" >EDIT</a>
       <a href="del.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-danger"onclick="return confirm('Confirm data deletion?')">DELETE</a>
