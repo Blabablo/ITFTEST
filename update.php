@@ -5,8 +5,7 @@ mysqli_real_connect($conn, 'labitftest.mysql.database.azure.com', 'Jirayu020@lab
 $product=$_POST['Product'];
 $price=$_POST['Price'];
 $amount=$_POST['Amount'];
-$total=$_POST['Total'];
-$sql="UPDATE ITFTEST SET Product='$product',Price='$price',Amount='$amount',Total='$total' WHERE ID='$id'";
+$sql="UPDATE ITFTEST SET Product='$product', Price='$price', Amount='$amount' WHERE ID='$id'";
 if (mysqli_query($conn, $sql)) {
     header("Location: index.php");
   } else {

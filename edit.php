@@ -45,8 +45,6 @@ div {
     <input type="text" name = "Price" id="idPrice" value="<?php echo "$row[Price]"; ?>" <br>
 		<label for="idAmount" style="margin: auto 120px">Amount</label>
     <input type="text" name = "Amount" id="idAmount" value="<?php echo "$row[Amount]"; ?>"> <br><br>
-		<label for="idTotal" style="margin: auto 120px">Total</label>
-    <input type="text" name = "Total" id="idTotal" value="<?php echo "$row[Total]"; ?>"> <br><br>
     <input type="submit" id="commentBtn"class="btn btn-outline-warning">
 </div>
   </form>

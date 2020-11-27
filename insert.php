@@ -11,9 +11,8 @@ if (mysqli_connect_errno($conn))
 $product = $_POST['product'];
 $price = $_POST['price'];
 $amount = $_POST['amount'];
-$total = $_POST['total'];
 
-$sql = "INSERT INTO ITFTEST (Product, Price, Amount, Total) VALUES ('$product', '$price', '$amount', "$total)";
+$sql = "INSERT INTO ITFTEST(Product, Price, Amount) VALUES ('$product', '$price', '$amount')";
 
 
 if (mysqli_query($conn, $sql)) {
