@@ -5,7 +5,7 @@ mysqli_real_connect($conn, 'labitftest.mysql.database.azure.com', 'Jirayu020@lab
 $name=$_POST['Name'];
 $comment=$_POST['Comment'];
 $link=$_POST['Link'];
-$sql="UPDATE guestbook SET Name='$name',Comment='$comment',Link='$link' WHERE ID='$id'";
+$sql="UPDATE ITFTEST SET Product='$product',Price='$price',Amount='$amount',Total='$total' WHERE ID='$id'";
 if (mysqli_query($conn, $sql)) {
     header("Location: index.php");
   } else {
